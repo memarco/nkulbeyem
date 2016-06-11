@@ -1,0 +1,2753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75318EB2-5E64-4705-9D52-7635BBD85FE8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NkulBeyem_Duala.My.MyApplication</StartupObject>
+    <RootNamespace>NkulBeyem_Duala</RootNamespace>
+    <AssemblyName>NkulBeyem-Duala</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>E:\Nkul7\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>fr</TargetCulture>
+    <ProductName>LANGUE DOULA</ProductName>
+    <PublisherName>WINWORLD</PublisherName>
+    <SuiteName>NKULBEYEM</SuiteName>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>E:\NkulBeyem-Duala\NkulBeyem-Duala\Packages</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NkulBeyem-Duala.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NkulBeyem-Duala.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>226B39A33A1073CF2F31AD8C30F2DFB3F3B1C4FF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NkulBeyem-Duala_CléTemporaire.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>NkulBeyem-Duala.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>NkulBeyem-Duala.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>images\ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\DLL\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\DLL\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\DLL\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chgBackground.Designer.vb">
+      <DependentUpon>chgBackground.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chgBackground.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choiceStart.Designer.vb">
+      <DependentUpon>choiceStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="choiceStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictEcole.Designer.vb">
+      <DependentUpon>dictEcole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictEcole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictVerbe.Designer.vb">
+      <DependentUpon>dictVerbe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictVerbe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictFamille.Designer.vb">
+      <DependentUpon>dictFamille.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictFamille.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictVilleVillage.Designer.vb">
+      <DependentUpon>dictVilleVillage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictVilleVillage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictReligion.Designer.vb">
+      <DependentUpon>dictReligion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictReligion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictMaison.Designer.vb">
+      <DependentUpon>dictMaison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictMaison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictMarche.Designer.vb">
+      <DependentUpon>dictMarche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictMarche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictSalutation.Designer.vb">
+      <DependentUpon>dictSalutation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictSalutation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictVetement.Designer.vb">
+      <DependentUpon>dictVetement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictVetement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictMoisJour.Designer.vb">
+      <DependentUpon>dictMoisJour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictMoisJour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictHeureTemps.Designer.vb">
+      <DependentUpon>dictHeureTemps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictHeureTemps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictCorpsHumain.Designer.vb">
+      <DependentUpon>dictCorpsHumain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictCorpsHumain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictPronom.Designer.vb">
+      <DependentUpon>dictPronom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictPronom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictChifreNombre.Designer.vb">
+      <DependentUpon>dictChifreNombre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictChifreNombre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCulture.Designer.vb">
+      <DependentUpon>frmCulture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCulture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChant.Designer.vb">
+      <DependentUpon>frmChant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chantForm.Designer.vb">
+      <DependentUpon>chantForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="chantForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jeuxImage.Designer.vb">
+      <DependentUpon>jeuxImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jeuxImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJeux.Designer.vb">
+      <DependentUpon>frmJeux.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJeux.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVariable.vb" />
+    <Compile Include="jeuxMot3.Designer.vb">
+      <DependentUpon>jeuxMot3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jeuxMot3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jeuxMot2.Designer.vb">
+      <DependentUpon>jeuxMot2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jeuxMot2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jeuxMot.Designer.vb">
+      <DependentUpon>jeuxMot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jeuxMot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiction.Designer.vb">
+      <DependentUpon>frmDiction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProverb.Designer.vb">
+      <DependentUpon>frmProverb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProverb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpression.Designer.vb">
+      <DependentUpon>frmExpression.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpression.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDialog.Designer.vb">
+      <DependentUpon>frmDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDictionary.Designer.vb">
+      <DependentUpon>frmDictionary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDictionary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlphabet.Designer.vb">
+      <DependentUpon>frmAlphabet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlphabet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dictAnimaux.Designer.vb">
+      <DependentUpon>dictAnimaux.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dictAnimaux.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTon.Designer.vb">
+      <DependentUpon>frmTon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPresentation.Designer.vb">
+      <DependentUpon>frmPresentation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPresentation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmHymne.Designer.vb">
+      <DependentUpon>frmHymne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHymne.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationSocial.Designer.vb">
+      <DependentUpon>PresentationSocial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationSocial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationReligion.Designer.vb">
+      <DependentUpon>PresentationReligion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationReligion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationArt.Designer.vb">
+      <DependentUpon>PresentationArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLitterature.Designer.vb">
+      <DependentUpon>PresentationLitterature.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLitterature.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLangue.Designer.vb">
+      <DependentUpon>PresentationLangue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLangue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationCommunaute.Designer.vb">
+      <DependentUpon>PresentationCommunaute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationCommunaute.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartScreen.Designer.vb">
+      <DependentUpon>StartScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="chgBackground.resx">
+      <DependentUpon>chgBackground.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choiceStart.resx">
+      <DependentUpon>choiceStart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictEcole.resx">
+      <DependentUpon>dictEcole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictVerbe.resx">
+      <DependentUpon>dictVerbe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictFamille.resx">
+      <DependentUpon>dictFamille.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictVilleVillage.resx">
+      <DependentUpon>dictVilleVillage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictReligion.resx">
+      <DependentUpon>dictReligion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictMaison.resx">
+      <DependentUpon>dictMaison.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictMarche.resx">
+      <DependentUpon>dictMarche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictSalutation.resx">
+      <DependentUpon>dictSalutation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictVetement.resx">
+      <DependentUpon>dictVetement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictMoisJour.resx">
+      <DependentUpon>dictMoisJour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictHeureTemps.resx">
+      <DependentUpon>dictHeureTemps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictCorpsHumain.resx">
+      <DependentUpon>dictCorpsHumain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictPronom.resx">
+      <DependentUpon>dictPronom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictChifreNombre.resx">
+      <DependentUpon>dictChifreNombre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCulture.resx">
+      <DependentUpon>frmCulture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChant.resx">
+      <DependentUpon>frmChant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chantForm.resx">
+      <DependentUpon>chantForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jeuxImage.resx">
+      <DependentUpon>jeuxImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJeux.resx">
+      <DependentUpon>frmJeux.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jeuxMot3.resx">
+      <DependentUpon>jeuxMot3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jeuxMot2.resx">
+      <DependentUpon>jeuxMot2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jeuxMot.resx">
+      <DependentUpon>jeuxMot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiction.resx">
+      <DependentUpon>frmDiction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProverb.resx">
+      <DependentUpon>frmProverb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpression.resx">
+      <DependentUpon>frmExpression.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDialog.resx">
+      <DependentUpon>frmDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDictionary.resx">
+      <DependentUpon>frmDictionary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlphabet.resx">
+      <DependentUpon>frmAlphabet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dictAnimaux.resx">
+      <DependentUpon>dictAnimaux.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTon.resx">
+      <DependentUpon>frmTon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPresentation.resx">
+      <DependentUpon>frmPresentation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHymne.resx">
+      <DependentUpon>frmHymne.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationSocial.resx">
+      <DependentUpon>PresentationSocial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationReligion.resx">
+      <DependentUpon>PresentationReligion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationArt.resx">
+      <DependentUpon>PresentationArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLitterature.resx">
+      <DependentUpon>PresentationLitterature.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLangue.resx">
+      <DependentUpon>PresentationLangue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationCommunaute.resx">
+      <DependentUpon>PresentationCommunaute.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartScreen.resx">
+      <DependentUpon>StartScreen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="audio\dictionnary\animaux\LE SERPENT.pkf" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\culture.mht" />
+    <None Include="Resources\text_hymne.png" />
+    <None Include="images\duala.png" />
+    <None Include="images\btnchoice.png" />
+    <None Include="images\art_fr.png" />
+    <None Include="images\communaute_fr.png" />
+    <None Include="images\langue_fr.png" />
+    <None Include="images\tradition_fr.png" />
+    <None Include="images\religion_fr.png" />
+    <None Include="images\social_fr.png" />
+    <None Include="images\presentation_tradition.png" />
+    <Content Include="audio\13DIALOGUE\art.mp3" />
+    <Content Include="audio\13DIALOGUE\communaute.mp3" />
+    <Content Include="audio\13DIALOGUE\dialog.mp3" />
+    <Content Include="audio\13DIALOGUE\langue.mp3" />
+    <Content Include="audio\13DIALOGUE\litterature.mp3" />
+    <Content Include="audio\13DIALOGUE\religion.mp3" />
+    <Content Include="audio\13DIALOGUE\social.mp3" />
+    <Content Include="audio\culture.wma" />
+    <Content Include="audio\dialog.wma" />
+    <Content Include="audio\dictionnary\ecole\DRAPEAU.wav" />
+    <Content Include="audio\dictionnary\ecole\ECOLE.wav" />
+    <Content Include="audio\dictionnary\ecole\LA CLASSE.wav" />
+    <Content Include="audio\dictionnary\ecole\LA CRAIE.wav" />
+    <Content Include="audio\dictionnary\ecole\LA RECREATION.wav" />
+    <Content Include="audio\dictionnary\ecole\LA REGLE.wav" />
+    <Content Include="audio\dictionnary\ecole\LE CRAYON.wav" />
+    <Content Include="audio\dictionnary\ecole\LE FOUET.wav" />
+    <Content Include="audio\dictionnary\ecole\LE MAITRE.wav" />
+    <Content Include="audio\dictionnary\ecole\LE PAPIER.wav" />
+    <Content Include="audio\dictionnary\ecole\LE SAC.wav" />
+    <Content Include="audio\dictionnary\ecole\LE STYLO.wav" />
+    <Content Include="audio\dictionnary\ecole\LE TABLEAU.wav" />
+    <Content Include="audio\dictionnary\ecole\LES ELEVES.wav" />
+    <Content Include="audio\dictionnary\ecole\LES LIVRES.wav" />
+    <Content Include="audio\dictionnary\ecole\SIFLET.wav" />
+    <Content Include="audio\dictionnary\famille\BEAU FRERE.wav" />
+    <Content Include="audio\dictionnary\famille\BEAU PERE.wav" />
+    <Content Include="audio\dictionnary\famille\COUSINCOUSINNE.wav" />
+    <Content Include="audio\dictionnary\famille\ENFANT.wav" />
+    <Content Include="audio\dictionnary\famille\FEMME MOUTO.wav" />
+    <Content Include="audio\dictionnary\famille\GARCON.wav" />
+    <Content Include="audio\dictionnary\famille\GNESSE +NEVEU.wav" />
+    <Content Include="audio\dictionnary\famille\GRAND PERE + GRAND MERE.wav" />
+    <Content Include="audio\dictionnary\famille\HOPITAL.wav" />
+    <Content Include="audio\dictionnary\famille\LA AMILLE.wav" />
+    <Content Include="audio\dictionnary\famille\LA BELLE MERE.wav" />
+    <Content Include="audio\dictionnary\famille\LA FAMME.wav" />
+    <Content Include="audio\dictionnary\famille\LA FILLE.wav" />
+    <Content Include="audio\dictionnary\famille\LA MERE.wav" />
+    <Content Include="audio\dictionnary\famille\LA PIQURE.wav" />
+    <Content Include="audio\dictionnary\famille\LE FRERE.wav" />
+    <Content Include="audio\dictionnary\famille\LE MALADE.wav" />
+    <Content Include="audio\dictionnary\famille\LE MEDECIN.wav" />
+    <Content Include="audio\dictionnary\famille\LE PERE.wav" />
+    <Content Include="audio\dictionnary\famille\LHOMME.wav" />
+    <Content Include="audio\dictionnary\famille\LONCLE.wav" />
+    <Content Include="audio\dictionnary\famille\ONCLE.wav" />
+    <Content Include="audio\dictionnary\famille\TANTE.wav" />
+    <Content Include="audio\dictionnary\maison\ARMOIRE.wav" />
+    <Content Include="audio\dictionnary\maison\EAU.wav" />
+    <Content Include="audio\dictionnary\maison\LA BROSSE.wav" />
+    <Content Include="audio\dictionnary\maison\LA CHAISE.wav" />
+    <Content Include="audio\dictionnary\maison\LA CHAMBRE.wav" />
+    <Content Include="audio\dictionnary\maison\LA COUR.wav" />
+    <Content Include="audio\dictionnary\maison\LA CUILLERE.wav" />
+    <Content Include="audio\dictionnary\maison\LA CUISINE.wav" />
+    <Content Include="audio\dictionnary\maison\LA DOUCHE.wav" />
+    <Content Include="audio\dictionnary\maison\LA FENETRE.wav" />
+    <Content Include="audio\dictionnary\maison\LA FLEUR.wav" />
+    <Content Include="audio\dictionnary\maison\LA LAMPE.wav" />
+    <Content Include="audio\dictionnary\maison\LA LOUCHE.wav" />
+    <Content Include="audio\dictionnary\maison\LA LUMIER.wav" />
+    <Content Include="audio\dictionnary\maison\LA MAISON.wav" />
+    <Content Include="audio\dictionnary\maison\LA MARMITE.wav" />
+    <Content Include="audio\dictionnary\maison\LA PHOTO.wav" />
+    <Content Include="audio\dictionnary\maison\LA PORTE.wav" />
+    <Content Include="audio\dictionnary\maison\LA TABLE.wav" />
+    <Content Include="audio\dictionnary\maison\LA VERANDA.wav" />
+    <Content Include="audio\dictionnary\maison\LE COUTEAU.wav" />
+    <Content Include="audio\dictionnary\maison\LE DRAPS.wav" />
+    <Content Include="audio\dictionnary\maison\LE FEUX.wav" />
+    <Content Include="audio\dictionnary\maison\LE LIT.wav" />
+    <Content Include="audio\dictionnary\maison\LE MIROIR.wav" />
+    <Content Include="audio\dictionnary\maison\LE MORTIER.wav" />
+    <Content Include="audio\dictionnary\maison\LE PILON.wav" />
+    <Content Include="audio\dictionnary\maison\LE PLAT.wav" />
+    <Content Include="audio\dictionnary\maison\LE SAVON.wav" />
+    <Content Include="audio\dictionnary\maison\LE SOL.wav" />
+    <Content Include="audio\dictionnary\maison\LE TOIT.wav" />
+    <Content Include="audio\dictionnary\maison\LE VERRE.wav" />
+    <Content Include="audio\dictionnary\maison\OREILLER.wav" />
+    <Content Include="audio\dictionnary\maison\SALON.wav" />
+    <Content Include="audio\dictionnary\maison\W.C.wav" />
+    <Content Include="audio\dictionnary\marche\ANANA.wav" />
+    <Content Include="audio\dictionnary\marche\ARACHIDE.wav" />
+    <Content Include="audio\dictionnary\marche\AVOCAT.wav" />
+    <Content Include="audio\dictionnary\marche\LA BANANE.wav" />
+    <Content Include="audio\dictionnary\marche\LA BOUTEILLE.wav" />
+    <Content Include="audio\dictionnary\marche\LA FARINE.wav" />
+    <Content Include="audio\dictionnary\marche\LA FEUILLE.wav" />
+    <Content Include="audio\dictionnary\marche\LA MANGUE.wav" />
+    <Content Include="audio\dictionnary\marche\LA VIANDE.wav" />
+    <Content Include="audio\dictionnary\marche\LE BEIGNET.wav" />
+    <Content Include="audio\dictionnary\marche\LE CITRON.wav" />
+    <Content Include="audio\dictionnary\marche\LE COUSCOUS.wav" />
+    <Content Include="audio\dictionnary\marche\LE FRUIT.wav" />
+    <Content Include="audio\dictionnary\marche\LE LAIT.wav" />
+    <Content Include="audio\dictionnary\marche\LE LEGUME.wav" />
+    <Content Include="audio\dictionnary\marche\LE MACABO.wav" />
+    <Content Include="audio\dictionnary\marche\LE PIMENT.wav" />
+    <Content Include="audio\dictionnary\marche\LE PLANTAIN.wav" />
+    <Content Include="audio\dictionnary\marche\LE RIZ.wav" />
+    <Content Include="audio\dictionnary\marche\LE VENDEUR.wav" />
+    <Content Include="audio\dictionnary\marche\LHUILE.wav" />
+    <Content Include="audio\dictionnary\marche\MARCHE.wav" />
+    <Content Include="audio\dictionnary\marche\OEUF.wav" />
+    <Content Include="audio\dictionnary\marche\OIGNON.wav" />
+    <Content Include="audio\dictionnary\marche\ORANGE.wav" />
+    <Content Include="audio\dictionnary\marche\PAPAYE.wav" />
+    <Content Include="audio\dictionnary\marche\POISSON.wav" />
+    <Content Include="audio\dictionnary\marche\SEL.wav" />
+    <Content Include="audio\dictionnary\marche\SUCRE.wav" />
+    <Content Include="audio\dictionnary\marche\TOMATE.wav" />
+    <Content Include="audio\dictionnary\religion\ANGE.wav" />
+    <Content Include="audio\dictionnary\religion\BAPTEME.wav" />
+    <Content Include="audio\dictionnary\religion\DIABLE.wav" />
+    <Content Include="audio\dictionnary\religion\DIEU.wav" />
+    <Content Include="audio\dictionnary\religion\ESPRIT.wav" />
+    <Content Include="audio\dictionnary\religion\LA MESSE.wav" />
+    <Content Include="audio\dictionnary\religion\LA PAIX.wav" />
+    <Content Include="audio\dictionnary\religion\LE CHANT.wav" />
+    <Content Include="audio\dictionnary\religion\LE DESORDRE.wav" />
+    <Content Include="audio\dictionnary\religion\LE SORCIER.wav" />
+    <Content Include="audio\dictionnary\religion\LEA VIE.wav" />
+    <Content Include="audio\dictionnary\religion\MARIAGE.wav" />
+    <Content Include="audio\dictionnary\religion\MAUVAIS.wav" />
+    <Content Include="audio\dictionnary\religion\PAQUES.wav" />
+    <Content Include="audio\dictionnary\religion\PRETRE.wav" />
+    <Content Include="audio\dictionnary\religion\SORCELLERIE.wav" />
+    <Content Include="audio\dictionnary\salutation\BON VOYAGE.wav" />
+    <Content Include="audio\dictionnary\salutation\BONJOUR.wav" />
+    <Content Include="audio\dictionnary\salutation\BONNE ANNEE.wav" />
+    <Content Include="audio\dictionnary\salutation\BONNE APPETIT.wav" />
+    <Content Include="audio\dictionnary\salutation\BONNE FETE.wav" />
+    <Content Include="audio\dictionnary\salutation\BONNE JOURNEE.wav" />
+    <Content Include="audio\dictionnary\salutation\BONNE NUIT.wav" />
+    <Content Include="audio\dictionnary\salutation\BONSOIR.wav" />
+    <Content Include="audio\dictionnary\salutation\COMMENT VA TU.wav" />
+    <Content Include="audio\dictionnary\verbe\ACCOUCHEZ.wav" />
+    <Content Include="audio\dictionnary\verbe\ACHETER.wav" />
+    <Content Include="audio\dictionnary\verbe\AIMER.wav" />
+    <Content Include="audio\dictionnary\verbe\AVOIR.wav" />
+    <Content Include="audio\dictionnary\verbe\BOIRE.wav" />
+    <Content Include="audio\dictionnary\verbe\CHANTER.wav" />
+    <Content Include="audio\dictionnary\verbe\CHASSER.wav" />
+    <Content Include="audio\dictionnary\verbe\COURIRE.wav" />
+    <Content Include="audio\dictionnary\verbe\DANSER.wav" />
+    <Content Include="audio\dictionnary\verbe\DONNER.wav" />
+    <Content Include="audio\dictionnary\verbe\DORMIR.wav" />
+    <Content Include="audio\dictionnary\verbe\ECHOUER.wav" />
+    <Content Include="audio\dictionnary\verbe\ECRIRE.wav" />
+    <Content Include="audio\dictionnary\verbe\ETRE.wav" />
+    <Content Include="audio\dictionnary\verbe\ETUDIER.wav" />
+    <Content Include="audio\dictionnary\verbe\FUIR.wav" />
+    <Content Include="audio\dictionnary\verbe\JOUER.wav" />
+    <Content Include="audio\dictionnary\verbe\LAVER.wav" />
+    <Content Include="audio\dictionnary\verbe\LIRE.wav" />
+    <Content Include="audio\dictionnary\verbe\MANGER.wav" />
+    <Content Include="audio\dictionnary\verbe\MARCHER.wav" />
+    <Content Include="audio\dictionnary\verbe\MENTIER.wav" />
+    <Content Include="audio\dictionnary\verbe\MOURIR.wav" />
+    <Content Include="audio\dictionnary\verbe\PARLER.wav" />
+    <Content Include="audio\dictionnary\verbe\PARTIR.wav" />
+    <Content Include="audio\dictionnary\verbe\PILER.wav" />
+    <Content Include="audio\dictionnary\verbe\PISSER.wav" />
+    <Content Include="audio\dictionnary\verbe\PLEUREE.wav" />
+    <Content Include="audio\dictionnary\verbe\PRIER.wav" />
+    <Content Include="audio\dictionnary\verbe\REFUSER.wav" />
+    <Content Include="audio\dictionnary\verbe\REGARDER.wav" />
+    <Content Include="audio\dictionnary\verbe\REUSSIR.wav" />
+    <Content Include="audio\dictionnary\verbe\SEMER.wav" />
+    <Content Include="audio\dictionnary\verbe\SORTIR.wav" />
+    <Content Include="audio\dictionnary\verbe\TAPER.wav" />
+    <Content Include="audio\dictionnary\verbe\TRAVAILLER.wav" />
+    <Content Include="audio\dictionnary\verbe\VOULLOIR.wav" />
+    <Content Include="audio\dictionnary\verbe\VOYAGER.wav" />
+    <Content Include="audio\dictionnary\vetement\CALECON.wav" />
+    <Content Include="audio\dictionnary\vetement\CHAPEAU.wav" />
+    <Content Include="audio\dictionnary\vetement\CHAUSSURE.wav" />
+    <Content Include="audio\dictionnary\vetement\CHEMISE.wav" />
+    <Content Include="audio\dictionnary\vetement\HABIT.wav" />
+    <Content Include="audio\dictionnary\vetement\JUPE.wav" />
+    <Content Include="audio\dictionnary\vetement\PAGNE.wav" />
+    <Content Include="audio\dictionnary\vetement\PANTALON.wav" />
+    <Content Include="audio\dictionnary\vetement\ROBE.wav" />
+    <Content Include="audio\dictionnary\vetement\SERVIETTE.wav" />
+    <Content Include="audio\dictionnary\vetement\TRAVATTE.wav" />
+    <Content Include="audio\dictionnary\vetement\VESTE.wav" />
+    <Content Include="audio\dictionnary\ville\CHEF.wav" />
+    <Content Include="audio\dictionnary\ville\DEUILLE.wav" />
+    <Content Include="audio\dictionnary\ville\EPOUSE.wav" />
+    <Content Include="audio\dictionnary\ville\LA CASE.wav" />
+    <Content Include="audio\dictionnary\ville\LA CHASSE.wav" />
+    <Content Include="audio\dictionnary\ville\LA DISPUTTE.wav" />
+    <Content Include="audio\dictionnary\ville\LA FEMME.wav" />
+    <Content Include="audio\dictionnary\ville\LA FORET.wav" />
+    <Content Include="audio\dictionnary\ville\LA GUERRE.wav" />
+    <Content Include="audio\dictionnary\ville\LA HOUE.wav" />
+    <Content Include="audio\dictionnary\ville\LA MACHETTE.wav" />
+    <Content Include="audio\dictionnary\ville\LA MOTO.wav" />
+    <Content Include="audio\dictionnary\ville\LA PALABRE.wav" />
+    <Content Include="audio\dictionnary\ville\LA POVRETE.wav" />
+    <Content Include="audio\dictionnary\ville\LA RIVIERRE.wav" />
+    <Content Include="audio\dictionnary\ville\LA ROUTE.wav" />
+    <Content Include="audio\dictionnary\ville\LA TERRE.wav" />
+    <Content Include="audio\dictionnary\ville\LA TOMBE.wav" />
+    <Content Include="audio\dictionnary\ville\LA VOITURE.wav" />
+    <Content Include="audio\dictionnary\ville\LE CHAMP.wav" />
+    <Content Include="audio\dictionnary\ville\LE CLAN.wav" />
+    <Content Include="audio\dictionnary\ville\LE GIBIER.wav" />
+    <Content Include="audio\dictionnary\ville\LE PAUVRE.wav" />
+    <Content Include="audio\dictionnary\ville\LE PUIS.wav" />
+    <Content Include="audio\dictionnary\ville\LE RICHE.wav" />
+    <Content Include="audio\dictionnary\ville\LE VELO.wav" />
+    <Content Include="audio\dictionnary\ville\LE VOISIN.wav" />
+    <Content Include="audio\dictionnary\ville\LE VOLEUR.wav" />
+    <Content Include="audio\dictionnary\ville\LES  ERBES.wav" />
+    <Content Include="audio\dictionnary\ville\LIMEUBLE.wav" />
+    <Content Include="audio\dictionnary\ville\MARIE.wav" />
+    <Content Include="audio\dictionnary\ville\MON EPOUSE.wav" />
+    <Content Include="audio\dictionnary\ville\UNE BOUTIQUE OU LES BOUTIQUES.wav" />
+    <Content Include="audio\hymne.wma" />
+    <Content Include="images\animaux\elephant.png" />
+    <None Include="images\chant.png" />
+    <Content Include="Packages\DotNetFX452\dotnetfx35.exe" />
+    <Content Include="Packages\DotNetFX452\NDP452-KB2901907-x86-x64-AllOS-FRA.exe" />
+    <Content Include="Packages\DotNetFX452\NDP452-KB2901954-Web.exe" />
+    <Content Include="Resources\culture.htm" />
+    <Content Include="Resources\culture_fichiers\colorschememapping.xml" />
+    <Content Include="Resources\culture_fichiers\filelist.xml" />
+    <Content Include="Resources\culture_fichiers\header.htm" />
+    <Content Include="Resources\culture_fichiers\image001.png" />
+    <Content Include="Resources\culture_fichiers\image002.jpg" />
+    <Content Include="Resources\culture_fichiers\image003.png" />
+    <None Include="Resources\culture_fichiers\themedata.thmx" />
+    <None Include="Resources\OIF_rvb_couleur.JPG" />
+    <None Include="Resources\logo_douala.png" />
+    <None Include="Resources\haricots-plats.jpg" />
+    <None Include="Resources\gateau.jpg" />
+    <None Include="Resources\veste.jpg" />
+    <None Include="Resources\short-tanker1.png" />
+    <None Include="Resources\serviette.png" />
+    <None Include="Resources\robe.png" />
+    <None Include="Resources\pantalon.jpg" />
+    <None Include="Resources\pagne.jpg" />
+    <None Include="Resources\jupe.gif" />
+    <None Include="Resources\habit.jpg" />
+    <None Include="Resources\cravate.jpg" />
+    <None Include="Resources\chemise.png" />
+    <None Include="Resources\paire-de-chaussures-a-lacets-52d7042b.jpg" />
+    <None Include="Resources\slip-23338.jpg" />
+    <None Include="Resources\d66a3754.jpg" />
+    <None Include="Resources\CorpsHumain\le-ventre.jpg" />
+    <None Include="Resources\CorpsHumain\tete.jpg" />
+    <None Include="Resources\CorpsHumain\sueur.bmp" />
+    <None Include="Resources\CorpsHumain\seins.jpg" />
+    <None Include="Resources\CorpsHumain\sang.jpg" />
+    <None Include="Resources\CorpsHumain\poitrine.png" />
+    <None Include="Resources\CorpsHumain\pied.jpg" />
+    <None Include="Resources\CorpsHumain\oreille.jpg" />
+    <None Include="Resources\CorpsHumain\oeil.jpg" />
+    <None Include="Resources\CorpsHumain\lenez.png" />
+    <None Include="Resources\CorpsHumain\main.jpg" />
+    <None Include="Resources\CorpsHumain\joue.png" />
+    <None Include="Resources\CorpsHumain\genou.jpg" />
+    <None Include="Resources\CorpsHumain\fesse.jpg" />
+    <None Include="Resources\CorpsHumain\les-epaules-11483.jpg" />
+    <None Include="Resources\CorpsHumain\le do.jpg" />
+    <None Include="Resources\CorpsHumain\doigt.jpg" />
+    <None Include="Resources\CorpsHumain\dents.gif" />
+    <None Include="Resources\CorpsHumain\cou.jpg" />
+    <None Include="Resources\CorpsHumain\coeur.jpg" />
+    <None Include="Resources\CorpsHumain\cheveu.jpg" />
+    <None Include="Resources\CorpsHumain\labouche.jpg" />
+    <None Include="Resources\CorpsHumain\barbe.png" />
+    <None Include="Resources\fichier\pronoms.png" />
+    <None Include="Resources\fichier\chiffre_nombre.jpg" />
+    <None Include="Resources\fichier\play_v.png" />
+    <None Include="images\atelier-communaute.jpg" />
+    <None Include="images\communaute.png" />
+    <None Include="images\animal.jpg" />
+    <None Include="images\calandrier.jpg" />
+    <None Include="images\animaux\animal.jpg" />
+    <None Include="images\animaux\boeuf.jpg" />
+    <None Include="images\animaux\boeuf.png" />
+    <None Include="images\animaux\vache.png" />
+    <None Include="images\animaux\x.png" />
+    <None Include="images\animaux\cheval.jpg" />
+    <None Include="images\animaux\chevaux.jpg" />
+    <None Include="images\animaux\chatton.png" />
+    <None Include="images\animaux\chevre.jpg" />
+    <None Include="images\animaux\chien.jpg" />
+    <None Include="images\animaux\elphanto.png" />
+    <None Include="images\animaux\lezard.jpg" />
+    <None Include="images\animaux\lievre.jpg" />
+    <None Include="images\animaux\lion.jpg" />
+    <None Include="images\dict_corp.png" />
+    <Content Include="audio\01C0NDUCTEUR\ENGLISH\ENGLISH.wav" />
+    <Content Include="audio\01C0NDUCTEUR\ENGLISH\SUITE PREAMBULE .wav" />
+    <Content Include="audio\01C0NDUCTEUR\FRENCH\1.PREAMBULE.wav" />
+    <Content Include="audio\01C0NDUCTEUR\FRENCH\2.SUITE PREAMBULE.wav" />
+    <Content Include="audio\02GENERALITE\GENERALITE.wav" />
+    <Content Include="audio\04LESVOYELLES\LES VOYELLES.wav" />
+    <Content Include="audio\05LESCONSONNES\LES CONSONNES.wav" />
+    <Content Include="audio\06LESTONS\EXEMPLE DES TONS.wav" />
+    <Content Include="audio\06LESTONS\LES TONS.wav" />
+    <Content Include="audio\07CONJUGAISON\AVOIR AU FUTUR.wav" />
+    <Content Include="audio\07CONJUGAISON\AVOIR AU PRESENT.wav" />
+    <Content Include="audio\07CONJUGAISON\ETRE AU  FUTUR.wav" />
+    <Content Include="audio\07CONJUGAISON\ETRE AU PASSE UN.wav" />
+    <Content Include="audio\07CONJUGAISON\ETRE AU PRESENT.wav" />
+    <Content Include="audio\07CONJUGAISON\MANGER AU FUTUR UN.wav" />
+    <Content Include="audio\07CONJUGAISON\MANGER AU PASSE.wav" />
+    <Content Include="audio\07CONJUGAISON\MANGER AU PRESENT.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\1 INTRO + A DEMAIN.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\A DEMAIN.mp3" />
+    <Content Include="audio\08PHRASESUSUELLES\ALLONS- Y.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\AU REVOIR.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\BON APPETIT.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\BONJOUR.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\BONNE NUIT.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\COMMENT T APPEL TU.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\COMMENT VA TON PERE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\COMMENT VA TU.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\EST TU MALADE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\IL AIME LA MUSIQUE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\IL APPREND LA LANGUE DOUALA.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\IL EST MORT.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\IL SE SONT MARIERS HIER.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\J ARRIVE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE ME LAVE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE NE PARLE PAS BIEN LA LANGUE DOUALA.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE NE PLEUR PAS.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE NE SAIS PAS.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE PARLE BIEN LA LANGUE DOUALA.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE POSE UNE QUESTION.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE REVIENT DU VILLAGE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE SAIS.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE SUIS CHEZ MOI.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE SUIS FRANCAIS.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE T EXPLIQUERAI PLUS TARD.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE T%27AIME.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE VAIS  AU TRAVAIL.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE VAIS A LA MAISON.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JE VAIS EN FRANCE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\JOYEUX ANINVERSAIRE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\OU VA TU.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\OU VAS T.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\QUE TU EST BELLE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\QUELLE EST TON PROBLEME.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\QUELLE HEUR EST IL.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\QUI EST TA MERE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\QUI EST TON PERE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\TU DANCE BIEN.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\TU ECRIS BIEN.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\TU EST DOU.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\TU EST TETU.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\VA A L%27 ECOLE.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\VA TE COUCHER.wav" />
+    <Content Include="audio\08PHRASESUSUELLES\VIENS ICI.wav" />
+    <Content Include="audio\11PROVERBES\PROVERB 2.wav" />
+    <Content Include="audio\11PROVERBES\PROVERB 3.wav" />
+    <Content Include="audio\11PROVERBES\PROVERB 4.wav" />
+    <Content Include="audio\11PROVERBES\PROVERB 5.wav" />
+    <Content Include="audio\11PROVERBES\PROVERB1.wav" />
+    <Content Include="audio\13DIALOGUE\DIALOGUE.wav" />
+    <Content Include="audio\dictionnary\animaux\1intro.wav" />
+    <Content Include="audio\dictionnary\animaux\BOEUF.wav" />
+    <Content Include="audio\dictionnary\animaux\CHEVAL.wav" />
+    <Content Include="audio\dictionnary\animaux\ELEPHANT.wav" />
+    <Content Include="audio\dictionnary\animaux\LA CHEVRE.wav" />
+    <Content Include="audio\dictionnary\animaux\LA MOUCHE .wav" />
+    <Content Include="audio\dictionnary\animaux\LA PANTHERE.wav" />
+    <Content Include="audio\dictionnary\animaux\LA POULE .wav" />
+    <Content Include="audio\dictionnary\animaux\LA SOURIS.wav" />
+    <Content Include="audio\dictionnary\animaux\LA TORTUE.wav" />
+    <Content Include="audio\dictionnary\animaux\LE CHAT.wav" />
+    <Content Include="audio\dictionnary\animaux\LE CHIENT.wav" />
+    <Content Include="audio\dictionnary\animaux\LE LEZARD.wav" />
+    <Content Include="audio\dictionnary\animaux\LE LIEVRE.wav" />
+    <Content Include="audio\dictionnary\animaux\LE MOUTON.wav" />
+    <Content Include="audio\dictionnary\animaux\LE PORS.wav" />
+    <Content Include="audio\dictionnary\animaux\LE SERPENT.wav" />
+    <Content Include="audio\dictionnary\animaux\LION.wav" />
+    <Content Include="audio\dictionnary\animaux\MOUSTIQUE.wav" />
+    <Content Include="audio\dictionnary\animaux\OISEAU.wav" />
+    <Content Include="audio\dictionnary\animaux\POISSON.wav" />
+    <Content Include="audio\dictionnary\animaux\SINGE.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\1.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\10.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\100.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\1000.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\10000.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\100000.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\11.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\12.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\13.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\14.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\15.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\16.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\17.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\18.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\19.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\2.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\20.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\21.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\3.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\30.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\4.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\40.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\5.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\50.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\500.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\5000.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\6.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\60.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\7.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\70.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\8.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\80.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\9.wav" />
+    <Content Include="audio\dictionnary\chiffreNombre\90.wav" />
+    <Content Include="audio\dictionnary\corpshumain\1 INTRO +  LA BOUCHE.wav" />
+    <Content Include="audio\dictionnary\corpshumain\CHEVEUX.wav" />
+    <Content Include="audio\dictionnary\corpshumain\intro.mp3" />
+    <Content Include="audio\dictionnary\corpshumain\LA CUISSE.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LA MAIN.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LA POITRINE.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LA SUEUR.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LA TETE.wav" />
+    <Content Include="audio\dictionnary\corpshumain\labouche.mp3" />
+    <Content Include="audio\dictionnary\corpshumain\LE COEUR.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LE COU .wav" />
+    <Content Include="audio\dictionnary\corpshumain\LE DOIT.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LE DOS.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LE NEZ.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LE PIED.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LE SANG.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LE SEINS.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LE VENTRE.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LES DENTS.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LES EPAULES.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LES FESSES.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LES GENOUX.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LES JOUES.wav" />
+    <Content Include="audio\dictionnary\corpshumain\LES OREILLES.wav" />
+    <Content Include="audio\dictionnary\corpshumain\OEIL.wav" />
+    <Content Include="audio\dictionnary\heuretemps\15H.wav" />
+    <Content Include="audio\dictionnary\heuretemps\20H.wav" />
+    <Content Include="audio\dictionnary\heuretemps\6H.wav" />
+    <Content Include="audio\dictionnary\heuretemps\HEURE.wav" />
+    <Content Include="audio\dictionnary\heuretemps\LA NUIT.wav" />
+    <Content Include="audio\dictionnary\heuretemps\LE MATIN.wav" />
+    <Content Include="audio\dictionnary\heuretemps\LE SOIR.wav" />
+    <Content Include="audio\dictionnary\heuretemps\MIDI.wav" />
+    <Content Include="audio\dictionnary\heuretemps\MINUIT.wav" />
+    <Content Include="audio\dictionnary\moisjour\AOUT.wav" />
+    <Content Include="audio\dictionnary\moisjour\AVRIL.wav" />
+    <Content Include="audio\dictionnary\moisjour\DECEMBRE.wav" />
+    <Content Include="audio\dictionnary\moisjour\DIMENCHE.wav" />
+    <Content Include="audio\dictionnary\moisjour\FEVRIER.wav" />
+    <Content Include="audio\dictionnary\moisjour\JANVIER.wav" />
+    <Content Include="audio\dictionnary\moisjour\JEUDI.wav" />
+    <Content Include="audio\dictionnary\moisjour\JUILLET.wav" />
+    <Content Include="audio\dictionnary\moisjour\JUIN.wav" />
+    <Content Include="audio\dictionnary\moisjour\LUNDI.wav" />
+    <Content Include="audio\dictionnary\moisjour\MAI.wav" />
+    <Content Include="audio\dictionnary\moisjour\MARDI.wav" />
+    <Content Include="audio\dictionnary\moisjour\MARS.wav" />
+    <Content Include="audio\dictionnary\moisjour\MERCREDI.wav" />
+    <Content Include="audio\dictionnary\moisjour\NOVEMBRE.wav" />
+    <Content Include="audio\dictionnary\moisjour\OCTOBRE.wav" />
+    <Content Include="audio\dictionnary\moisjour\SAMEDI.wav" />
+    <Content Include="audio\dictionnary\moisjour\SEPTEMBRE.wav" />
+    <Content Include="audio\dictionnary\moisjour\VENDREDI.wav" />
+    <Content Include="audio\dictionnary\pronom\A OU EN OU DANS OU CHEZ.wav" />
+    <Content Include="audio\dictionnary\pronom\AVEC OU ET.wav" />
+    <Content Include="audio\dictionnary\pronom\COMMENT.wav" />
+    <Content Include="audio\dictionnary\pronom\ENCORE.wav" />
+    <Content Include="audio\dictionnary\pronom\il-elle.mp3" />
+    <Content Include="audio\dictionnary\pronom\ils-elles.mp3" />
+    <Content Include="audio\dictionnary\pronom\intro.mp3" />
+    <Content Include="audio\dictionnary\pronom\je.mp3" />
+    <Content Include="audio\dictionnary\pronom\leurs.mp3" />
+    <Content Include="audio\dictionnary\pronom\lui.mp3" />
+    <Content Include="audio\dictionnary\pronom\ma-mon.mp3" />
+    <Content Include="audio\dictionnary\pronom\NOM.wav" />
+    <Content Include="audio\dictionnary\pronom\notre.mp3" />
+    <Content Include="audio\dictionnary\pronom\nous.mp3" />
+    <Content Include="audio\dictionnary\pronom\OU.wav" />
+    <Content Include="audio\dictionnary\pronom\OUI.wav" />
+    <Content Include="audio\dictionnary\pronom\PARCE QUE.wav" />
+    <Content Include="audio\dictionnary\pronom\PEUT ËTRE.wav" />
+    <Content Include="audio\dictionnary\pronom\POURQUOI.wav" />
+    <Content Include="audio\dictionnary\pronom\PRONOM PERSONEL.wav" />
+    <Content Include="audio\dictionnary\pronom\PRONOM POSESSIFwav.wav" />
+    <Content Include="audio\dictionnary\pronom\PRONOM.wav" />
+    <Content Include="audio\dictionnary\pronom\QUAND.wav" />
+    <Content Include="audio\dictionnary\pronom\QUELLE BOUTEILLE.wav" />
+    <Content Include="audio\dictionnary\pronom\QUELLE OU QUOI.wav" />
+    <Content Include="audio\dictionnary\pronom\QUI.wav" />
+    <Content Include="audio\dictionnary\pronom\sa-son.mp3" />
+    <Content Include="audio\dictionnary\pronom\ta-ton.mp3" />
+    <Content Include="audio\dictionnary\pronom\tu.mp3" />
+    <Content Include="audio\dictionnary\pronom\votre.mp3" />
+    <Content Include="audio\dictionnary\pronom\vous.mp3" />
+    <Content Include="audio\intro.wma" />
+    <None Include="images\couteau.jpg" />
+    <None Include="images\cuillere-a-soupe.png" />
+    <None Include="images\41979.png" />
+    <None Include="images\animaux\reponse.jpg" />
+    <None Include="images\alphabet2.png" />
+    <Content Include="images\doc.png" />
+    <None Include="Resources\fichier\ton.png" />
+    <None Include="Resources\fichier\audio.png" />
+    <None Include="Resources\fichier\conjugaison.png" />
+    <None Include="Resources\fichier\alphabet.png" />
+    <None Include="Resources\fichier\generalite.png" />
+    <None Include="Resources\drapeau1.png" />
+    <None Include="Resources\drapeau2.png" />
+    <None Include="images\loading1.gif" />
+    <None Include="images\loading2.gif" />
+    <None Include="images\fond_dic.png" />
+    <None Include="images\pointillism-incense-sticks-dark-light-paper-art-form-5.jpg" />
+    <None Include="images\religion.gif" />
+    <None Include="images\tradition.png" />
+    <None Include="images\tradition_com.png" />
+    <None Include="images\social.png" />
+    <None Include="images\langue.jpg" />
+    <None Include="images\presentation_communaute.png" />
+    <None Include="images\presentation_langue.png" />
+    <None Include="images\presentation_art.png" />
+    <None Include="images\presentation_religion.png" />
+    <None Include="images\presentation_social.png" />
+    <None Include="images\expre1.png" />
+    <None Include="images\expre2.png" />
+    <None Include="images\expre3.png" />
+    <None Include="images\proverbe.png" />
+    <None Include="images\nombre.jpg" />
+    <None Include="images\organes.jpg" />
+    <None Include="images\Ecole.gif" />
+    <None Include="images\famille.jpg" />
+    <None Include="images\heuretemps.jpg" />
+    <None Include="images\maison.jpg" />
+    <None Include="images\marche.jpg" />
+    <None Include="images\pronoms.jpg" />
+    <None Include="images\religion.png" />
+    <None Include="images\salutation.jpg" />
+    <None Include="images\verbe.jpg" />
+    <None Include="images\vêtement.jpg" />
+    <None Include="images\ville_village.jpg" />
+    <None Include="images\heuretempsmod.png" />
+    <None Include="images\moisjour.png" />
+    <None Include="images\vetement.png" />
+    <None Include="images\salutation1.png" />
+    <None Include="images\verbe.png" />
+    <None Include="images\marche.png" />
+    <None Include="images\MarcheImage\oignon.jpg" />
+    <None Include="images\MarcheImage\avocat.png" />
+    <None Include="images\MarcheImage\ananas.png" />
+    <None Include="images\MarcheImage\banane.jpg" />
+    <None Include="images\MarcheImage\beignet.jpg" />
+    <None Include="images\MarcheImage\citron.png" />
+    <None Include="images\MarcheImage\couscous.jpg" />
+    <None Include="images\MarcheImage\marche.jpg" />
+    <None Include="images\MarcheImage\oeuf.png" />
+    <None Include="images\MarcheImage\orange.png" />
+    <None Include="images\MarcheImage\papaye.png" />
+    <None Include="images\MarcheImage\piment.jpg" />
+    <None Include="images\MarcheImage\plantain.png" />
+    <None Include="images\MarcheImage\farine.png" />
+    <None Include="images\MarcheImage\feuille.png" />
+    <None Include="images\MarcheImage\fruit.png" />
+    <None Include="images\MarcheImage\huile.png" />
+    <None Include="images\MarcheImage\lait.jpg" />
+    <None Include="images\MarcheImage\legume.jpg" />
+    <None Include="images\MarcheImage\bouteille.png" />
+    <None Include="images\MarcheImage\mangue.png" />
+    <None Include="images\MarcheImage\riz.png" />
+    <None Include="images\MarcheImage\sel.png" />
+    <None Include="images\MarcheImage\sucre.png" />
+    <None Include="images\MarcheImage\tomate.png" />
+    <None Include="images\MarcheImage\vendeur.png" />
+    <None Include="images\MarcheImage\viande.jpg" />
+    <None Include="images\MarcheImage\macabo.jpg" />
+    <None Include="Resources\arachide_11791977-copy.jpg" />
+    <None Include="Resources\arbre.jpg" />
+    <None Include="images\famille_texte.png" />
+    <None Include="images\ecole_texte.png" />
+    <None Include="images\ECOLE\cahier-d-ecriture.gif" />
+    <None Include="images\ECOLE\classe.jpg" />
+    <None Include="images\ECOLE\crai.jpg" />
+    <None Include="images\ECOLE\crayon.png" />
+    <None Include="images\ECOLE\Cameroun.gif" />
+    <None Include="images\ECOLE\ecole.jpg" />
+    <None Include="images\ECOLE\ecole_batiment.jpg" />
+    <None Include="images\ECOLE\eleve.jpg" />
+    <None Include="images\ECOLE\papier.JPG" />
+    <None Include="images\ECOLE\tableau.png" />
+    <None Include="images\ECOLE\regle.png" />
+    <None Include="images\ECOLE\recreation.gif" />
+    <None Include="images\ECOLE\sifflet.jpg" />
+    <None Include="images\ECOLE\stylo-bille-bic-cristal-noir.jpg" />
+    <None Include="images\ECOLE\sac.jpg" />
+    <None Include="images\ECOLE\maitre.gif" />
+    <None Include="images\ECOLE\livre.jpg" />
+    <None Include="images\ECOLE\fouet-18831.jpg" />
+    <None Include="images\logodoul.png" />
+    <None Include="images\jeux\a1.png" />
+    <None Include="images\jeux\a2.png" />
+    <None Include="images\jeux\a3.png" />
+    <None Include="images\jeux\a4.png" />
+    <None Include="images\jeux\a5.png" />
+    <None Include="images\jeux\b1.png" />
+    <None Include="images\jeux\b2.png" />
+    <None Include="images\jeux\b3.png" />
+    <None Include="images\jeux\b4.png" />
+    <None Include="images\jeux\b5.png" />
+    <None Include="images\failed.jpg" />
+    <None Include="images\jeux\a6.png" />
+    <None Include="images\jeux\a7.png" />
+    <None Include="images\jeux\a8.png" />
+    <None Include="images\jeux\a9.png" />
+    <None Include="images\jeux\a10.png" />
+    <None Include="images\jeux\b6.png" />
+    <None Include="images\jeux\b7.png" />
+    <None Include="images\jeux\b8.png" />
+    <None Include="images\jeux\b9.png" />
+    <None Include="images\jeux\b10.png" />
+    <None Include="images\jeux\a11.png" />
+    <None Include="images\jeux\a12.png" />
+    <None Include="images\jeux\a13.png" />
+    <None Include="images\jeux\a14.png" />
+    <None Include="images\jeux\a15.png" />
+    <None Include="images\jeux\b11.png" />
+    <None Include="images\jeux\b12.png" />
+    <None Include="images\jeux\b14.png" />
+    <None Include="images\jeux\b13.png" />
+    <None Include="images\jeux\b15.png" />
+    <None Include="images\jeux\anim1.png" />
+    <None Include="images\jeux\anim2.png" />
+    <None Include="images\jeux\anim3.png" />
+    <None Include="images\jeux\anim_chevre.png" />
+    <None Include="images\jeux\anim_dog.png" />
+    <None Include="images\jeux\anim_elephant.png" />
+    <None Include="images\jeux\anim_lez.png" />
+    <None Include="images\jeux\dog_jeux.png" />
+    <None Include="images\jeux\restart.png" />
+    <None Include="images\jeux\mouscito.jpg" />
+    <Content Include="images\MaisonImage\armoire.png" />
+    <Content Include="images\MaisonImage\brosse.png" />
+    <Content Include="images\MaisonImage\chaise.jpg" />
+    <Content Include="images\MaisonImage\chambre.jpg" />
+    <Content Include="images\MaisonImage\cour.jpg" />
+    <Content Include="images\MaisonImage\couteau.png" />
+    <Content Include="images\MaisonImage\cueillere.png" />
+    <Content Include="images\MaisonImage\cuisine.jpg" />
+    <Content Include="images\MaisonImage\douche.jpg" />
+    <Content Include="images\MaisonImage\drap.jpg" />
+    <Content Include="images\MaisonImage\eau.jpg" />
+    <Content Include="images\MaisonImage\fenêtre.jpg" />
+    <Content Include="images\MaisonImage\feu.png" />
+    <Content Include="images\MaisonImage\fleur.png" />
+    <Content Include="images\MaisonImage\lampe.jpg" />
+    <Content Include="images\MaisonImage\lit.png" />
+    <Content Include="images\MaisonImage\louche.png" />
+    <Content Include="images\MaisonImage\lumiere.jpg" />
+    <Content Include="images\MaisonImage\maison.png" />
+    <None Include="images\MaisonImage\maison_.png" />
+    <None Include="images\MaisonImage\maison_texte.png" />
+    <Content Include="images\MaisonImage\marmite.jpg" />
+    <Content Include="images\MaisonImage\mirroir.jpg" />
+    <Content Include="images\MaisonImage\mortier.png" />
+    <Content Include="images\MaisonImage\oreiller.jpg" />
+    <Content Include="images\MaisonImage\photo.jpg" />
+    <Content Include="images\MaisonImage\pilon.jpg" />
+    <Content Include="images\MaisonImage\plat.png" />
+    <Content Include="images\MaisonImage\porte.jpg" />
+    <Content Include="images\MaisonImage\salon.jpg" />
+    <Content Include="images\MaisonImage\savon.jpg" />
+    <Content Include="images\MaisonImage\sol.jpg" />
+    <Content Include="images\MaisonImage\table.png" />
+    <Content Include="images\MaisonImage\toit.jpg" />
+    <Content Include="images\MaisonImage\veranda.jpg" />
+    <Content Include="images\MaisonImage\verre.jpg" />
+    <Content Include="images\MaisonImage\wc.jpg" />
+    <None Include="images\religion_texte.png" />
+    <None Include="images\ville_village_texte2.png" />
+    <None Include="images\verbe_text.png" />
+    <None Include="images\successs.jpg" />
+    <None Include="images\next.gif" />
+    <None Include="images\preview.png" />
+    <Content Include="images\ville_village_texte.png" />
+    <None Include="Resources\anim3.bmp" />
+    <Content Include="Resources\audio\01C0NDUCTEUR\ENGLISH\ENGLISH.wav" />
+    <Content Include="Resources\audio\01C0NDUCTEUR\ENGLISH\SUITE PREAMBULE .wav" />
+    <Content Include="Resources\audio\01C0NDUCTEUR\FRENCH\1.PREAMBULE.wav" />
+    <Content Include="Resources\audio\01C0NDUCTEUR\FRENCH\2.SUITE PREAMBULE.wav" />
+    <Content Include="Resources\audio\02GENERALITE\GENERALITE.wav" />
+    <None Include="Resources\audio\07CONJUGAISON\AVOIR AU FUTUR.wav" />
+    <None Include="Resources\audio\07CONJUGAISON\AVOIR AU PRESENT.wav" />
+    <None Include="Resources\audio\07CONJUGAISON\ETRE AU  FUTUR.wav" />
+    <None Include="Resources\audio\07CONJUGAISON\ETRE AU PASSE UN.wav" />
+    <None Include="Resources\audio\07CONJUGAISON\ETRE AU PRESENT.wav" />
+    <None Include="Resources\audio\07CONJUGAISON\MANGER AU FUTUR UN .wav" />
+    <None Include="Resources\audio\07CONJUGAISON\MANGER AU PASSE.wav" />
+    <None Include="Resources\audio\07CONJUGAISON\MANGER AU PRESENT.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\1intro.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\BOEUF.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\CHEVAL.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\ELEPHANT.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\OISEAU.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LA_CHEVRE.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LA MOUCHE .wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LA PANTHERE.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LA POULE .wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LA SOURIS.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LA TORTUE.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LE CHAT.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LE CHIENT.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LE LEZARD.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LE LIEVRE.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LE MOUTON.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LE PORS.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LE SERPENT.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\LION.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\MOUSTIQUE.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\POISSON.wav" />
+    <Content Include="Resources\audio\dictionnary\animaux\SINGE.wav" />
+    <None Include="Resources\fichier\StartScreenBonDouala.png" />
+    <None Include="Resources\fichier\play_h.png" />
+    <None Include="Resources\play_h.bmp" />
+    <None Include="Resources\fichier\play.png" />
+    <None Include="Resources\play.jpg" />
+    <None Include="Resources\fichier\animaux_1.png" />
+    <None Include="Resources\test-1.png" />
+    <None Include="images\prof.png" />
+    <None Include="Resources\audio\dictionnary\animaux\LE SERPENT.pkf" />
+    <None Include="Resources\fichier\test.pdf" />
+    <None Include="Resources\prof.jpg" />
+    <None Include="images\monliberté.jpg" />
+    <None Include="images\setting_h.png" />
+    <None Include="Resources\setting2.bmp" />
+    <None Include="images\setting.png" />
+    <None Include="images\traduction.png" />
+    <None Include="images\Proverb-Large1.png" />
+    <None Include="images\Documents.png" />
+    <None Include="images\Abstract-blue-background.jpg" />
+    <None Include="images\bg1.jpg" />
+    <None Include="images\bg2.jpg" />
+    <None Include="images\background.png" />
+    <None Include="images\270505120246.jpg" />
+    <None Include="images\140705221903.jpg" />
+    <None Include="images\bg5.jpg" />
+    <Content Include="images\culture\140705221320.jpg" />
+    <Content Include="images\culture\140705221401.jpg" />
+    <Content Include="images\culture\270505160442.jpg" />
+    <Content Include="images\culture\assiko.jpg" />
+    <Content Include="images\culture\ethnie Douala.jpg" />
+    <Content Include="images\culture\ngondo2.jpg" />
+    <Content Include="images\culture\ngondo4.jpg" />
+    <Content Include="images\culture\ngondo6.jpg" />
+    <Content Include="images\culture\ngondo8.jpg" />
+    <None Include="images\fnd_animaux.jpg" />
+    <Content Include="images\fond.png" />
+    <None Include="images\Free-Blue-Vector-Background.jpg" />
+    <Content Include="images\ico.ico" />
+    <None Include="images\logowinwordnew.png" />
+    <None Include="images\logo_duala_bon.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Acrobat Reader_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe After Effects_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Audition_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Bridge_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Contribute_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Dreamweaver_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Encore_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Fireworks_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Flash Builder_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Flash Catalyst_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Flash_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Illustrator_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe InDesign_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe LightRoom_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe OnLocation_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Photoshop_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Premiere Pro_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Adobe Soundbooth_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Aero WinFlip 3D_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Aimp_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\AIM_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Angry Birds_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\App Store alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\App Store_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Audacity_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Avast Antivirus_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Bejeweled_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\BitTorrent_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Bluetooth alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Bluetooth_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Calculator_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Calendar_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Camstudio_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Camtasia Studio_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\CCleaner_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Circle Dock_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Coding app_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Command Prompt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Disk Cleanup_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Dropbox_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Email Chat_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Evernote_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Expose_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Facetime_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\FileZilla_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\FL Studio_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Foobar_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\GIMP_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\GOM Player_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Google Desktop_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Google Earth_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Google Music_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Google Sketchup_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\GrooveShark_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\HTML5_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\iCal_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\iChat_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\iMovie_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Internet Download Manager_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\iTunes alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\iTunes_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Launchy alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Launchy_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Live Mail_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Live Messenger alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Live Messenger alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Live Messenger alt 3_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Live Messenger_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Live Sync_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Magnifier_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Messaging alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Messaging_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Microphone 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Microphone 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Mouse Options_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\MovieMaker_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Nokia Suite alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Nokia Suite_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Notepad_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\ObjectDock_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Other Antivirus Software_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Paint NET_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Paint_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Picture Viewer_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\QuickTime_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Rainmeter_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\RegEdit_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Remote Desktop_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\RKLauncher_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\RocketDock_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Screenshot_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Skype alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Skype_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Spaces_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Spotify_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Steam alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Steam_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Task Manager alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Task Manager alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Task Manager_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Thunderbird_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Tune-Up Utilities_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\UltraISO_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Uninstall_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\uTorrent alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\uTorrent_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\VirtualBox_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Visual Studio alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Visual Studio_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\VLC Media Player_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\VMware_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Winamp_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Windows Live Mesh_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Windows Media Player alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Windows Media Player_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\XWindows Dock_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Y%27z Dock_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Yahoo Messenger alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Yahoo Messenger_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Zune alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Applications\Zune_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Android Smartphone_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\A_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Blank Drive_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\B_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\CD alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\CD_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Computer alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Computer alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Computer_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\C_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\D_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\E_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\F_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Globe_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\G_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\H_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\iPad_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\iPhone_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\iPod_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\I_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\J_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\K_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\L_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Micro SD Card_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\M_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Network_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\N_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\O_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\P_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Q_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\RAM_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\R_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\SD Card_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Smart Phone_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Start Button_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\S_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\T_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\USB alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\USB alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\USB_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\U_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\V_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Windows Phone_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\W_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Xbox 360_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\X_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Y_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\DevicesDrives\Z_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Android_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Apple_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Blank Folder_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Bookmarks alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Bookmarks Folder alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Bookmarks Folder_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Bookmarks_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Configure alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Configure alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Configure alt 3_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Configure_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Control Panel_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Default_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Desktop alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Desktop_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Devices_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Documents Folder_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Documents Library_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Documents_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Downloads Folder_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Downloads Library_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Downloads_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Ease of Access_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Exit Full Screen_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Explorer alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Explorer_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Finder_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Fonts_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Full Screen_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Gadgets_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Games alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Games alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Games_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Groups_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Help_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Homegroup_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Info_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Libraries alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Libraries_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Linux_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Music Folder_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Music Library_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Music_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\My Apps_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\My Video apps_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\My Videos_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Personalize_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Personal_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Pictures Folder_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Pictures Library_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Pictures_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Recycle Bin Empty alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Recycle Bin Empty_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Recycle Bin Full alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Recycle Bin Full_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Screen Resolution_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Security Approved_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Security Denied_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Security_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\System Restore_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\System_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Ubuntu alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Ubuntu_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\User No-Frame_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\User With Frame_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Videos Folder_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Videos Library_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Videos_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Windows 8_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Windows alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Windows Update_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\FoldersOS\Windows_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Acer_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Amazon alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Amazon_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Android Market_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Answers in Genesis_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Aperture_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Asus_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Bebo_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Bing alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Bing_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Chrome Web Store_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\CNN_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Compaq alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Compaq_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Del.icio us_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Dell alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Dell_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\DeviantART alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\DeviantART alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\DeviantART_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\digg alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\digg_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\eBay alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\eBay_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Facebook alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Facebook alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Facebook alt 3_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Facebook alt 4_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Facebook alt 5_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Facebook_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Flickr alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Flickr alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Flickr alt 3_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Flickr_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Fox News_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Gateway_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Gmail alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Gmail_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google +1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Blogger_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Calendar_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Docs_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Maps_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Orkut_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Picasa alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Picasa alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Picasa_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Places_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Reader alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Reader_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Tasks_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Translate_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google Voice_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google+ alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google+ alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google+_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Google_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Hotmail alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\HP_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Hulu Plus_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Hulu_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Intel_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Lenovo_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Linked in alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Linked in_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Live Hotmail_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Live SkyDrive_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Microsoft alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Microsoft Store_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Microsoft_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\myspace alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\myspace_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Netflix_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Pandora alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Pandora_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Pinterest alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Pinterest_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Rdio alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Rdio_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Reddit alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Reddit_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\RSS Feed_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\StumbleUpon alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\StumbleUpon_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\The New York Times alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\The New York Times_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\The Weather Channel alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\The Weather Channel_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Tumblr alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Tumblr_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Twitter alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Twitter alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Twitter alt 3_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Twitter alt 4_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Twitter_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Vimeo_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Wikipedia alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Wikipedia alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Wikipedia_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Windows Marketplace_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Windows Store_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Wordpress alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Wordpress_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Yahoo! alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Yahoo! alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Yahoo!_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\YouTube alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\Youtube alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\InternetShortcutsManufacturers\YouTube_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Access alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Access alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Access_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Entourage alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Entourage alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Entourage_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Excel alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Excel alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Excel_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Frontpage alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Frontpage alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\FrontPage_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\InfoPath alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\InfoPath alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\InfoPath_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\MS Office Upload Center_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\MS Office_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\OneNote alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\OneNote alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\OneNote_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\OpenOffice_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Outlook alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Outlook alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Outlook_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\PowerPoint alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\PowerPoint alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\PowerPoint_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Project alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Project alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Project_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Publisher alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Publisher alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Publisher_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\SharePoint alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\SharePoint_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Visio alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Visio_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Word alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Word alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\OfficeApps\Word_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Graduation alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Graduation_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Mail alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Mail_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Notifications_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Origins_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Pin_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Power - Hibernate_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Power - Lock_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Power - Log Off_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Power - Restart_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Power - Shut Down_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Power - Sleep_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Power - Standby_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Power - Switch User_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Puzzle_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Save_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Search alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Search_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Share alt 1_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Share alt 2_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Share_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Shortcuts_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Signal_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Tasks_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\Other\Update_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Firefox alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Firefox_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Google Canary alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Google Canary_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Google Chrome alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Google Chrome_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Google Chromium alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Google Chromium_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Internet Explorer 10_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Internet Explorer alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Internet Explorer_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Opera alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Opera_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\RockMelt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Safari alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\Safari_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\SRWare Iron alt_mirror.png" />
+    <Content Include="images\METROICONSREFLECTED\WebBrowsers\SRWare Iron_mirror.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Acrobat Reader.png" />
+    <Content Include="images\METROICONS\Applications\Adobe After Effects.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Audition.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Bridge.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Contribute.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Dreamweaver.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Encore.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Fireworks.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Flash Builder.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Flash Catalyst.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Flash.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Illustrator.png" />
+    <Content Include="images\METROICONS\Applications\Adobe InDesign.png" />
+    <Content Include="images\METROICONS\Applications\Adobe LightRoom.png" />
+    <Content Include="images\METROICONS\Applications\Adobe OnLocation.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Photoshop.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Premiere Pro.png" />
+    <Content Include="images\METROICONS\Applications\Adobe Soundbooth.png" />
+    <Content Include="images\METROICONS\Applications\Aero WinFlip 3D.png" />
+    <Content Include="images\METROICONS\Applications\AIM.png" />
+    <Content Include="images\METROICONS\Applications\Aimp.png" />
+    <Content Include="images\METROICONS\Applications\Angry Birds.png" />
+    <Content Include="images\METROICONS\Applications\App Store alt.png" />
+    <Content Include="images\METROICONS\Applications\App Store.png" />
+    <Content Include="images\METROICONS\Applications\Audacity.png" />
+    <Content Include="images\METROICONS\Applications\Avast Antivirus.png" />
+    <Content Include="images\METROICONS\Applications\Bejeweled.png" />
+    <Content Include="images\METROICONS\Applications\BitTorrent.png" />
+    <Content Include="images\METROICONS\Applications\Bluetooth alt.png" />
+    <Content Include="images\METROICONS\Applications\Bluetooth.png" />
+    <Content Include="images\METROICONS\Applications\Calculator.png" />
+    <Content Include="images\METROICONS\Applications\Calendar.png" />
+    <Content Include="images\METROICONS\Applications\Camstudio.png" />
+    <Content Include="images\METROICONS\Applications\Camtasia Studio.png" />
+    <Content Include="images\METROICONS\Applications\CCleaner.png" />
+    <Content Include="images\METROICONS\Applications\Circle Dock.png" />
+    <Content Include="images\METROICONS\Applications\Coding app.png" />
+    <Content Include="images\METROICONS\Applications\Command Prompt.png" />
+    <Content Include="images\METROICONS\Applications\Disk Cleanup.png" />
+    <Content Include="images\METROICONS\Applications\Dropbox.png" />
+    <Content Include="images\METROICONS\Applications\Email Chat.png" />
+    <Content Include="images\METROICONS\Applications\Evernote.png" />
+    <Content Include="images\METROICONS\Applications\Expose.png" />
+    <Content Include="images\METROICONS\Applications\Facetime.png" />
+    <Content Include="images\METROICONS\Applications\FileZilla.png" />
+    <Content Include="images\METROICONS\Applications\FL Studio.png" />
+    <Content Include="images\METROICONS\Applications\Foobar.png" />
+    <Content Include="images\METROICONS\Applications\GIMP.png" />
+    <Content Include="images\METROICONS\Applications\GOM Player.png" />
+    <Content Include="images\METROICONS\Applications\Google Desktop.png" />
+    <Content Include="images\METROICONS\Applications\Google Earth.png" />
+    <Content Include="images\METROICONS\Applications\Google Music.png" />
+    <Content Include="images\METROICONS\Applications\Google Sketchup.png" />
+    <Content Include="images\METROICONS\Applications\GrooveShark.png" />
+    <Content Include="images\METROICONS\Applications\HTML5.png" />
+    <Content Include="images\METROICONS\Applications\iCal.png" />
+    <Content Include="images\METROICONS\Applications\iChat.png" />
+    <Content Include="images\METROICONS\Applications\iMovie.png" />
+    <Content Include="images\METROICONS\Applications\Internet Download Manager.png" />
+    <Content Include="images\METROICONS\Applications\iTunes alt.png" />
+    <Content Include="images\METROICONS\Applications\iTunes.png" />
+    <Content Include="images\METROICONS\Applications\Launchy alt.png" />
+    <Content Include="images\METROICONS\Applications\Launchy.png" />
+    <Content Include="images\METROICONS\Applications\Live Mail.png" />
+    <Content Include="images\METROICONS\Applications\Live Messenger alt 1.png" />
+    <Content Include="images\METROICONS\Applications\Live Messenger alt 2.png" />
+    <Content Include="images\METROICONS\Applications\Live Messenger alt 3.png" />
+    <Content Include="images\METROICONS\Applications\Live Messenger.png" />
+    <Content Include="images\METROICONS\Applications\Live Sync.png" />
+    <Content Include="images\METROICONS\Applications\Magnifier.png" />
+    <Content Include="images\METROICONS\Applications\Messaging alt.png" />
+    <Content Include="images\METROICONS\Applications\Messaging.png" />
+    <Content Include="images\METROICONS\Applications\Microphone 1.png" />
+    <Content Include="images\METROICONS\Applications\Microphone 2.png" />
+    <Content Include="images\METROICONS\Applications\Mouse Options.png" />
+    <Content Include="images\METROICONS\Applications\MovieMaker.png" />
+    <Content Include="images\METROICONS\Applications\Nokia Suite alt.png" />
+    <Content Include="images\METROICONS\Applications\Nokia Suite.png" />
+    <Content Include="images\METROICONS\Applications\Notepad.png" />
+    <Content Include="images\METROICONS\Applications\ObjectDock.png" />
+    <Content Include="images\METROICONS\Applications\Other Antivirus Software.png" />
+    <Content Include="images\METROICONS\Applications\Paint NET.png" />
+    <Content Include="images\METROICONS\Applications\Paint.png" />
+    <Content Include="images\METROICONS\Applications\Picture Viewer.png" />
+    <Content Include="images\METROICONS\Applications\QuickTime.png" />
+    <Content Include="images\METROICONS\Applications\Rainmeter.png" />
+    <Content Include="images\METROICONS\Applications\RegEdit.png" />
+    <Content Include="images\METROICONS\Applications\Remote Desktop.png" />
+    <Content Include="images\METROICONS\Applications\RKLauncher.png" />
+    <Content Include="images\METROICONS\Applications\RocketDock.png" />
+    <Content Include="images\METROICONS\Applications\Screenshot.png" />
+    <Content Include="images\METROICONS\Applications\Skype alt.png" />
+    <Content Include="images\METROICONS\Applications\Skype.png" />
+    <Content Include="images\METROICONS\Applications\Spaces.png" />
+    <Content Include="images\METROICONS\Applications\Spotify.png" />
+    <Content Include="images\METROICONS\Applications\Steam alt.png" />
+    <Content Include="images\METROICONS\Applications\Steam.png" />
+    <Content Include="images\METROICONS\Applications\Task Manager alt 1.png" />
+    <Content Include="images\METROICONS\Applications\Task Manager alt 2.png" />
+    <Content Include="images\METROICONS\Applications\Task Manager.png" />
+    <Content Include="images\METROICONS\Applications\Thunderbird.png" />
+    <Content Include="images\METROICONS\Applications\Tune-Up Utilities.png" />
+    <Content Include="images\METROICONS\Applications\UltraISO.png" />
+    <Content Include="images\METROICONS\Applications\Uninstall.png" />
+    <Content Include="images\METROICONS\Applications\uTorrent alt.png" />
+    <Content Include="images\METROICONS\Applications\uTorrent.png" />
+    <Content Include="images\METROICONS\Applications\VirtualBox.png" />
+    <Content Include="images\METROICONS\Applications\Visual Studio alt.png" />
+    <Content Include="images\METROICONS\Applications\Visual Studio.png" />
+    <Content Include="images\METROICONS\Applications\VLC Media Player.png" />
+    <Content Include="images\METROICONS\Applications\VMware.png" />
+    <Content Include="images\METROICONS\Applications\Winamp.png" />
+    <Content Include="images\METROICONS\Applications\Windows Live Mesh.png" />
+    <Content Include="images\METROICONS\Applications\Windows Media Player alt.png" />
+    <Content Include="images\METROICONS\Applications\Windows Media Player.png" />
+    <Content Include="images\METROICONS\Applications\XWindows Dock.png" />
+    <Content Include="images\METROICONS\Applications\Y%27z Dock.png" />
+    <Content Include="images\METROICONS\Applications\Yahoo Messenger alt.png" />
+    <Content Include="images\METROICONS\Applications\Yahoo Messenger.png" />
+    <Content Include="images\METROICONS\Applications\Zune alt.png" />
+    <Content Include="images\METROICONS\Applications\Zune.png" />
+    <Content Include="images\METROICONS\DevicesDrives\A.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Android Smartphone.png" />
+    <Content Include="images\METROICONS\DevicesDrives\B.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Blank Drive.png" />
+    <Content Include="images\METROICONS\DevicesDrives\C.png" />
+    <Content Include="images\METROICONS\DevicesDrives\CD alt.png" />
+    <Content Include="images\METROICONS\DevicesDrives\CD.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Computer alt 1.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Computer alt 2.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Computer.png" />
+    <Content Include="images\METROICONS\DevicesDrives\D.png" />
+    <Content Include="images\METROICONS\DevicesDrives\E.png" />
+    <Content Include="images\METROICONS\DevicesDrives\F.png" />
+    <Content Include="images\METROICONS\DevicesDrives\G.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Globe.png" />
+    <Content Include="images\METROICONS\DevicesDrives\H.png" />
+    <Content Include="images\METROICONS\DevicesDrives\I.png" />
+    <Content Include="images\METROICONS\DevicesDrives\iPad.png" />
+    <Content Include="images\METROICONS\DevicesDrives\iPhone.png" />
+    <Content Include="images\METROICONS\DevicesDrives\iPod.png" />
+    <Content Include="images\METROICONS\DevicesDrives\J.png" />
+    <Content Include="images\METROICONS\DevicesDrives\K.png" />
+    <Content Include="images\METROICONS\DevicesDrives\L.png" />
+    <Content Include="images\METROICONS\DevicesDrives\M.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Micro SD Card.png" />
+    <Content Include="images\METROICONS\DevicesDrives\N.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Network.png" />
+    <Content Include="images\METROICONS\DevicesDrives\O.png" />
+    <Content Include="images\METROICONS\DevicesDrives\P.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Q.png" />
+    <Content Include="images\METROICONS\DevicesDrives\R.png" />
+    <Content Include="images\METROICONS\DevicesDrives\RAM.png" />
+    <Content Include="images\METROICONS\DevicesDrives\S.png" />
+    <Content Include="images\METROICONS\DevicesDrives\SD Card.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Smart Phone.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Start Button.png" />
+    <Content Include="images\METROICONS\DevicesDrives\T.png" />
+    <Content Include="images\METROICONS\DevicesDrives\U.png" />
+    <Content Include="images\METROICONS\DevicesDrives\USB alt 1.png" />
+    <Content Include="images\METROICONS\DevicesDrives\USB alt 2.png" />
+    <Content Include="images\METROICONS\DevicesDrives\USB.png" />
+    <Content Include="images\METROICONS\DevicesDrives\V.png" />
+    <Content Include="images\METROICONS\DevicesDrives\W.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Windows Phone.png" />
+    <Content Include="images\METROICONS\DevicesDrives\X.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Xbox 360.jpg" />
+    <Content Include="images\METROICONS\DevicesDrives\Y.png" />
+    <Content Include="images\METROICONS\DevicesDrives\Z.png" />
+    <Content Include="images\METROICONS\FoldersOS\Android.png" />
+    <Content Include="images\METROICONS\FoldersOS\Apple.png" />
+    <Content Include="images\METROICONS\FoldersOS\Blank Folder.png" />
+    <Content Include="images\METROICONS\FoldersOS\Bookmarks alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Bookmarks Folder alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Bookmarks Folder.png" />
+    <Content Include="images\METROICONS\FoldersOS\Bookmarks.png" />
+    <Content Include="images\METROICONS\FoldersOS\Configure alt 1.png" />
+    <Content Include="images\METROICONS\FoldersOS\Configure alt 2.png" />
+    <Content Include="images\METROICONS\FoldersOS\Configure alt 3.png" />
+    <Content Include="images\METROICONS\FoldersOS\Configure.png" />
+    <Content Include="images\METROICONS\FoldersOS\Control Panel.png" />
+    <Content Include="images\METROICONS\FoldersOS\Default.png" />
+    <Content Include="images\METROICONS\FoldersOS\Desktop alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Desktop.png" />
+    <Content Include="images\METROICONS\FoldersOS\Devices.png" />
+    <Content Include="images\METROICONS\FoldersOS\Documents Folder.png" />
+    <Content Include="images\METROICONS\FoldersOS\Documents Library.png" />
+    <Content Include="images\METROICONS\FoldersOS\Documents.png" />
+    <Content Include="images\METROICONS\FoldersOS\Downloads Folder.png" />
+    <Content Include="images\METROICONS\FoldersOS\Downloads Library.png" />
+    <Content Include="images\METROICONS\FoldersOS\Downloads.png" />
+    <Content Include="images\METROICONS\FoldersOS\Ease of Access.png" />
+    <Content Include="images\METROICONS\FoldersOS\Exit Full Screen.png" />
+    <Content Include="images\METROICONS\FoldersOS\Explorer alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Explorer.png" />
+    <Content Include="images\METROICONS\FoldersOS\Finder.png" />
+    <Content Include="images\METROICONS\FoldersOS\Fonts.png" />
+    <Content Include="images\METROICONS\FoldersOS\Full Screen.png" />
+    <Content Include="images\METROICONS\FoldersOS\Gadgets.png" />
+    <Content Include="images\METROICONS\FoldersOS\Games alt 2.png" />
+    <Content Include="images\METROICONS\FoldersOS\Games alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Games.png" />
+    <Content Include="images\METROICONS\FoldersOS\Groups.png" />
+    <Content Include="images\METROICONS\FoldersOS\Help.png" />
+    <Content Include="images\METROICONS\FoldersOS\Homegroup.png" />
+    <Content Include="images\METROICONS\FoldersOS\Info.png" />
+    <Content Include="images\METROICONS\FoldersOS\Libraries alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Libraries.png" />
+    <Content Include="images\METROICONS\FoldersOS\Linux.png" />
+    <Content Include="images\METROICONS\FoldersOS\Music Folder.png" />
+    <Content Include="images\METROICONS\FoldersOS\Music Library.png" />
+    <Content Include="images\METROICONS\FoldersOS\Music.png" />
+    <Content Include="images\METROICONS\FoldersOS\My Apps.png" />
+    <Content Include="images\METROICONS\FoldersOS\My Video apps.png" />
+    <Content Include="images\METROICONS\FoldersOS\My Videos.png" />
+    <Content Include="images\METROICONS\FoldersOS\Personal.png" />
+    <Content Include="images\METROICONS\FoldersOS\Personalize.png" />
+    <Content Include="images\METROICONS\FoldersOS\Pictures Folder.png" />
+    <Content Include="images\METROICONS\FoldersOS\Pictures Library.png" />
+    <Content Include="images\METROICONS\FoldersOS\Pictures.png" />
+    <Content Include="images\METROICONS\FoldersOS\Recycle Bin Empty alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Recycle Bin Empty.png" />
+    <Content Include="images\METROICONS\FoldersOS\Recycle Bin Full alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Recycle Bin Full.png" />
+    <Content Include="images\METROICONS\FoldersOS\Screen Resolution.png" />
+    <Content Include="images\METROICONS\FoldersOS\Security Approved.png" />
+    <Content Include="images\METROICONS\FoldersOS\Security Denied.png" />
+    <Content Include="images\METROICONS\FoldersOS\Security.png" />
+    <Content Include="images\METROICONS\FoldersOS\System Restore.png" />
+    <Content Include="images\METROICONS\FoldersOS\System.png" />
+    <Content Include="images\METROICONS\FoldersOS\Ubuntu alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Ubuntu.png" />
+    <Content Include="images\METROICONS\FoldersOS\User No-Frame.png" />
+    <Content Include="images\METROICONS\FoldersOS\User With Frame.png" />
+    <Content Include="images\METROICONS\FoldersOS\Videos Folder.png" />
+    <Content Include="images\METROICONS\FoldersOS\Videos Library.png" />
+    <Content Include="images\METROICONS\FoldersOS\Videos.png" />
+    <Content Include="images\METROICONS\FoldersOS\Windows 8.png" />
+    <Content Include="images\METROICONS\FoldersOS\Windows alt.png" />
+    <Content Include="images\METROICONS\FoldersOS\Windows Update.png" />
+    <Content Include="images\METROICONS\FoldersOS\Windows.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Acer.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Amazon alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Amazon.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Android Market.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Answers in Genesis.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Aperture.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Asus.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Bebo.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Bing alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Bing.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Chrome Web Store.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\CNN.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Compaq alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Compaq.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Del.icio us.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Dell alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Dell.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\DeviantART alt 1.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\DeviantART alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\DeviantART.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\digg alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\digg.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\eBay alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\eBay.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Facebook alt 1.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Facebook alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Facebook alt 3.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Facebook alt 4.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Facebook alt 5.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Facebook.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Flickr alt 1.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Flickr alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Flickr alt 3.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Flickr.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Fox News.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Gateway.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Gmail alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Gmail.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google +1.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google alt 1.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google alt 3.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Blogger.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Calendar.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Docs.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Maps.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Orkut.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Picasa alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Picasa.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Places.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Play.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Reader alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Reader.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Tasks.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Translate.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google Voice.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google+ alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google+ alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google+.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Google.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Hotmail alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\HP.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Hulu Plus.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Hulu.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Intel.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Lenovo.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Linked in alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Linked in.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Live Hotmail.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Live SkyDrive.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Microsoft alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Microsoft Store.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Microsoft.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\myspace alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\myspace.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Netflix.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Pandora alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Pandora.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Pinterest alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Pinterest.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Rdio alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Rdio.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Reddit alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Reddit.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\RSS Feed.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\StumbleUpon alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\StumbleUpon.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\The New York Times alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\The New York Times.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\The Weather Channel alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\The Weather Channel.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Tumblr alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Tumblr.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Twitter alt 1.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Twitter alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Twitter alt 3.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Twitter alt 4.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Twitter.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Vimeo.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Wikipedia alt 1.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Wikipedia alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Wikipedia.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Windows Marketplace.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Windows Store.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Wordpress alt.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Wordpress.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Yahoo! alt 1.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Yahoo! alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Yahoo!.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\YouTube alt 1.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\Youtube alt 2.png" />
+    <Content Include="images\METROICONS\InternetShortcutsManufacturers\YouTube.png" />
+    <Content Include="images\METROICONS\OfficeApps\Access alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\Access alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\Access.png" />
+    <Content Include="images\METROICONS\OfficeApps\Entourage alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\Entourage alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\Entourage.png" />
+    <Content Include="images\METROICONS\OfficeApps\Excel alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\Excel alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\Excel.png" />
+    <Content Include="images\METROICONS\OfficeApps\Frontpage alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\Frontpage alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\FrontPage.png" />
+    <Content Include="images\METROICONS\OfficeApps\InfoPath alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\InfoPath alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\InfoPath.png" />
+    <Content Include="images\METROICONS\OfficeApps\MS Office Upload Center.png" />
+    <Content Include="images\METROICONS\OfficeApps\MS Office.png" />
+    <Content Include="images\METROICONS\OfficeApps\OneNote alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\OneNote alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\OneNote.png" />
+    <Content Include="images\METROICONS\OfficeApps\OpenOffice.png" />
+    <Content Include="images\METROICONS\OfficeApps\Outlook alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\Outlook alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\Outlook.png" />
+    <Content Include="images\METROICONS\OfficeApps\PowerPoint alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\PowerPoint alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\PowerPoint.png" />
+    <Content Include="images\METROICONS\OfficeApps\Project alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\Project alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\Project.png" />
+    <Content Include="images\METROICONS\OfficeApps\Publisher alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\Publisher alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\Publisher.png" />
+    <Content Include="images\METROICONS\OfficeApps\SharePoint alt.png" />
+    <Content Include="images\METROICONS\OfficeApps\SharePoint.png" />
+    <Content Include="images\METROICONS\OfficeApps\Visio alt.png" />
+    <Content Include="images\METROICONS\OfficeApps\Visio.png" />
+    <Content Include="images\METROICONS\OfficeApps\Word alt 1.png" />
+    <Content Include="images\METROICONS\OfficeApps\Word alt 2.png" />
+    <Content Include="images\METROICONS\OfficeApps\Word.png" />
+    <Content Include="images\METROICONS\Other\Graduation alt.png" />
+    <Content Include="images\METROICONS\Other\Graduation.png" />
+    <Content Include="images\METROICONS\Other\Mail alt.png" />
+    <Content Include="images\METROICONS\Other\Mail.png" />
+    <Content Include="images\METROICONS\Other\Notifications.png" />
+    <Content Include="images\METROICONS\Other\Origins.png" />
+    <Content Include="images\METROICONS\Other\Pin.png" />
+    <Content Include="images\METROICONS\Other\Power - Hibernate.png" />
+    <Content Include="images\METROICONS\Other\Power - Lock.png" />
+    <Content Include="images\METROICONS\Other\Power - Log Off.png" />
+    <Content Include="images\METROICONS\Other\Power - Restart.png" />
+    <Content Include="images\METROICONS\Other\Power - Shut Down.png" />
+    <Content Include="images\METROICONS\Other\Power - Sleep.png" />
+    <Content Include="images\METROICONS\Other\Power - Standby.png" />
+    <Content Include="images\METROICONS\Other\Power - Switch User.png" />
+    <Content Include="images\METROICONS\Other\Puzzle.png" />
+    <Content Include="images\METROICONS\Other\Save.png" />
+    <Content Include="images\METROICONS\Other\Search alt.png" />
+    <Content Include="images\METROICONS\Other\Search.png" />
+    <Content Include="images\METROICONS\Other\Share alt 1.png" />
+    <Content Include="images\METROICONS\Other\Share alt 2.png" />
+    <Content Include="images\METROICONS\Other\Share.png" />
+    <Content Include="images\METROICONS\Other\Shortcuts.png" />
+    <Content Include="images\METROICONS\Other\Signal.png" />
+    <Content Include="images\METROICONS\Other\Tasks.png" />
+    <Content Include="images\METROICONS\Other\Update.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Firefox alt.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Firefox.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Google Canary alt.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Google Canary.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Google Chrome alt.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Google Chrome.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Google Chromium alt.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Google Chromium.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Internet Explorer 10.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Internet Explorer alt.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Internet Explorer.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Opera alt.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Opera.png" />
+    <Content Include="images\METROICONS\WebBrowsers\RockMelt.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Safari alt.png" />
+    <Content Include="images\METROICONS\WebBrowsers\Safari.png" />
+    <Content Include="images\METROICONS\WebBrowsers\SRWare Iron alt.png" />
+    <Content Include="images\METROICONS\WebBrowsers\SRWare Iron.png" />
+    <Content Include="images\MetroICO\Applications\Adobe Acrobat Reader.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe After Effects.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Audition.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Bridge.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Contribute.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Dreamweaver.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Encore.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Fireworks.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Flash Builder.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Flash Catalyst.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Flash.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Illustrator.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe InDesign.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe LightRoom.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe OnLocation.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Photoshop.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Premiere Pro.ico" />
+    <Content Include="images\MetroICO\Applications\Adobe Soundbooth.ico" />
+    <Content Include="images\MetroICO\Applications\Aero WinFlip 3D.ico" />
+    <Content Include="images\MetroICO\Applications\AIM.ico" />
+    <Content Include="images\MetroICO\Applications\Aimp.ico" />
+    <Content Include="images\MetroICO\Applications\Angry Birds.ico" />
+    <Content Include="images\MetroICO\Applications\App Store alt.ico" />
+    <Content Include="images\MetroICO\Applications\App Store.ico" />
+    <Content Include="images\MetroICO\Applications\Audacity.ico" />
+    <Content Include="images\MetroICO\Applications\Avast Antivirus.ico" />
+    <Content Include="images\MetroICO\Applications\Bejeweled.ico" />
+    <Content Include="images\MetroICO\Applications\BitTorrent.ico" />
+    <Content Include="images\MetroICO\Applications\Bluetooth alt.ico" />
+    <Content Include="images\MetroICO\Applications\Bluetooth.ico" />
+    <Content Include="images\MetroICO\Applications\Calculator.ico" />
+    <Content Include="images\MetroICO\Applications\Calendar.ico" />
+    <Content Include="images\MetroICO\Applications\Camstudio.ico" />
+    <Content Include="images\MetroICO\Applications\Camtasia Studio.ico" />
+    <Content Include="images\MetroICO\Applications\CCleaner.ico" />
+    <Content Include="images\MetroICO\Applications\Circle Dock.ico" />
+    <Content Include="images\MetroICO\Applications\Coding app.ico" />
+    <Content Include="images\MetroICO\Applications\Command Prompt.ico" />
+    <Content Include="images\MetroICO\Applications\Disk Cleanup.ico" />
+    <Content Include="images\MetroICO\Applications\Dropbox.ico" />
+    <Content Include="images\MetroICO\Applications\Email Chat.ico" />
+    <Content Include="images\MetroICO\Applications\Evernote.ico" />
+    <Content Include="images\MetroICO\Applications\Expose.ico" />
+    <Content Include="images\MetroICO\Applications\Facetime.ico" />
+    <Content Include="images\MetroICO\Applications\FileZilla.ico" />
+    <Content Include="images\MetroICO\Applications\FL Studio.ico" />
+    <Content Include="images\MetroICO\Applications\Foobar.ico" />
+    <Content Include="images\MetroICO\Applications\GIMP.ico" />
+    <Content Include="images\MetroICO\Applications\GOM Player.ico" />
+    <Content Include="images\MetroICO\Applications\Google Desktop.ico" />
+    <Content Include="images\MetroICO\Applications\Google Earth.ico" />
+    <Content Include="images\MetroICO\Applications\Google Music.ico" />
+    <Content Include="images\MetroICO\Applications\Google Sketchup.ico" />
+    <Content Include="images\MetroICO\Applications\GrooveShark.ico" />
+    <Content Include="images\MetroICO\Applications\HTML5.ico" />
+    <Content Include="images\MetroICO\Applications\iCal.ico" />
+    <Content Include="images\MetroICO\Applications\iChat.ico" />
+    <Content Include="images\MetroICO\Applications\iMovie.ico" />
+    <Content Include="images\MetroICO\Applications\Internet Download Manager.ico" />
+    <Content Include="images\MetroICO\Applications\iTunes alt.ico" />
+    <Content Include="images\MetroICO\Applications\iTunes.ico" />
+    <Content Include="images\MetroICO\Applications\Launchy alt.ico" />
+    <Content Include="images\MetroICO\Applications\Launchy.ico" />
+    <Content Include="images\MetroICO\Applications\Live Mail.ico" />
+    <Content Include="images\MetroICO\Applications\Live Messenger alt 1.ico" />
+    <Content Include="images\MetroICO\Applications\Live Messenger alt 2.ico" />
+    <Content Include="images\MetroICO\Applications\Live Messenger alt 3.ico" />
+    <Content Include="images\MetroICO\Applications\Live Messenger.ico" />
+    <Content Include="images\MetroICO\Applications\Live Sync.ico" />
+    <Content Include="images\MetroICO\Applications\Magnifier.ico" />
+    <Content Include="images\MetroICO\Applications\Messaging alt.ico" />
+    <Content Include="images\MetroICO\Applications\Messaging.ico" />
+    <Content Include="images\MetroICO\Applications\Microphone 1.ico" />
+    <Content Include="images\MetroICO\Applications\Microphone 2.ico" />
+    <Content Include="images\MetroICO\Applications\Mouse Options.ico" />
+    <Content Include="images\MetroICO\Applications\MovieMaker.ico" />
+    <Content Include="images\MetroICO\Applications\Nokia Suite alt.ico" />
+    <Content Include="images\MetroICO\Applications\Nokia Suite.ico" />
+    <Content Include="images\MetroICO\Applications\Notepad.ico" />
+    <Content Include="images\MetroICO\Applications\ObjectDock.ico" />
+    <Content Include="images\MetroICO\Applications\Other Antivirus Software.ico" />
+    <Content Include="images\MetroICO\Applications\Paint NET.ico" />
+    <Content Include="images\MetroICO\Applications\Paint.ico" />
+    <Content Include="images\MetroICO\Applications\Picture Viewer.ico" />
+    <Content Include="images\MetroICO\Applications\QuickTime.ico" />
+    <Content Include="images\MetroICO\Applications\Rainmeter.ico" />
+    <Content Include="images\MetroICO\Applications\RegEdit.ico" />
+    <Content Include="images\MetroICO\Applications\Remote Desktop.ico" />
+    <Content Include="images\MetroICO\Applications\RKLauncher.ico" />
+    <Content Include="images\MetroICO\Applications\RocketDock.ico" />
+    <Content Include="images\MetroICO\Applications\Screenshot.ico" />
+    <Content Include="images\MetroICO\Applications\Skype alt.ico" />
+    <Content Include="images\MetroICO\Applications\Skype.ico" />
+    <Content Include="images\MetroICO\Applications\Spaces.ico" />
+    <Content Include="images\MetroICO\Applications\Spotify.ico" />
+    <Content Include="images\MetroICO\Applications\Steam alt.ico" />
+    <Content Include="images\MetroICO\Applications\Steam.ico" />
+    <Content Include="images\MetroICO\Applications\Task Manager alt 1.ico" />
+    <Content Include="images\MetroICO\Applications\Task Manager alt 2.ico" />
+    <Content Include="images\MetroICO\Applications\Task Manager.ico" />
+    <Content Include="images\MetroICO\Applications\Thunderbird.ico" />
+    <Content Include="images\MetroICO\Applications\Tune-Up Utilities.ico" />
+    <Content Include="images\MetroICO\Applications\UltraISO.ico" />
+    <Content Include="images\MetroICO\Applications\Uninstall.ico" />
+    <Content Include="images\MetroICO\Applications\uTorrent alt.ico" />
+    <Content Include="images\MetroICO\Applications\uTorrent.ico" />
+    <Content Include="images\MetroICO\Applications\VirtualBox.ico" />
+    <Content Include="images\MetroICO\Applications\Visual Studio alt.ico" />
+    <Content Include="images\MetroICO\Applications\Visual Studio.ico" />
+    <Content Include="images\MetroICO\Applications\VLC Media Player.ico" />
+    <Content Include="images\MetroICO\Applications\VMware.ico" />
+    <Content Include="images\MetroICO\Applications\Winamp.ico" />
+    <Content Include="images\MetroICO\Applications\Windows Live Mesh.ico" />
+    <Content Include="images\MetroICO\Applications\Windows Media Player alt.ico" />
+    <Content Include="images\MetroICO\Applications\Windows Media Player.ico" />
+    <Content Include="images\MetroICO\Applications\XWindows Dock.ico" />
+    <Content Include="images\MetroICO\Applications\Y%27z Dock.ico" />
+    <Content Include="images\MetroICO\Applications\Yahoo Messenger alt.ico" />
+    <Content Include="images\MetroICO\Applications\Yahoo Messenger.ico" />
+    <Content Include="images\MetroICO\Applications\Zune alt.ico" />
+    <Content Include="images\MetroICO\Applications\Zune.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\A.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Android Smartphone.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\B.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Blank Drive.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\C.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\CD alt.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\CD.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Computer alt 1.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Computer alt 2.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Computer.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\D.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\E.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\F.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\G.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Globe.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\H.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\I.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\iPad.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\iPhone.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\iPod.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\J.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\K.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\L.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\M.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Micro SD Card.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\N.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Network.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\O.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\P.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Q.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\R.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\RAM.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\S.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\SD Card.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Smart Phone.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Start Button.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\T.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\U.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\USB alt 1.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\USB alt 2.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\USB.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\V.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\W.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Windows Phone.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\X.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Xbox 360.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Y.ico" />
+    <Content Include="images\MetroICO\DevicesDrives\Z.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Android.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Apple.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Blank Folder.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Bookmarks alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Bookmarks Folder alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Bookmarks Folder.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Bookmarks.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Configure alt 1.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Configure alt 2.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Configure alt 3.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Configure.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Control Panel.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Default.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Desktop alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Desktop.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Devices.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Documents Folder.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Documents Library.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Documents.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Downloads Folder.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Downloads Library.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Downloads.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Ease of Access.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Exit Full Screen.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Explorer alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Explorer.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Finder.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Fonts.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Full Screen.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Gadgets.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Games alt 2.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Games alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Games.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Groups.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Help.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Homegroup.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Info.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Libraries alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Libraries.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Linux.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Music Folder.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Music Library.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Music.ico" />
+    <Content Include="images\MetroICO\FoldersOS\My Apps.ico" />
+    <Content Include="images\MetroICO\FoldersOS\My Video apps.ico" />
+    <Content Include="images\MetroICO\FoldersOS\My Videos.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Personal.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Personalize.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Pictures Folder.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Pictures Library.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Pictures.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Recycle Bin Empty alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Recycle Bin Empty.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Recycle Bin Full alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Recycle Bin Full.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Screen Resolution.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Security Approved.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Security Denied.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Security.ico" />
+    <Content Include="images\MetroICO\FoldersOS\System Restore.ico" />
+    <Content Include="images\MetroICO\FoldersOS\System.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Ubuntu alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Ubuntu.ico" />
+    <Content Include="images\MetroICO\FoldersOS\User No-Frame.ico" />
+    <Content Include="images\MetroICO\FoldersOS\User With Frame.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Videos Folder.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Videos Library.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Videos.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Windows 8.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Windows alt.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Windows Update.ico" />
+    <Content Include="images\MetroICO\FoldersOS\Windows.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Acer.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Amazon alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Amazon.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Android Market.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Answers in Genesis.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Aperture.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Asus.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Bebo.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Bing alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Bing.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Chrome Web Store.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\CNN.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Compaq alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Compaq.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Del.icio us.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Dell alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Dell.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\DeviantART alt 1.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\DeviantART alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\DeviantART.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\digg alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\digg.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\eBay alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\eBay.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Facebook alt 1.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Facebook alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Facebook alt 3.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Facebook alt 4.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Facebook alt 5.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Facebook.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Flickr alt 1.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Flickr alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Flickr alt 3.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Flickr.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Fox News.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Gateway.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Gmail alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Gmail.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google +1.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google alt 1.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google alt 3.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Blogger.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Calendar.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Docs.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Maps.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Orkut.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Picasa alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Picasa.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Places.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Play.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Reader alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Reader.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Tasks.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Translate.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google Voice.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google+ alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google+ alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google+.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Google.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Hotmail alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\HP.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Hulu Plus.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Hulu.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Intel.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Lenovo.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Linked in alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Linked in.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Live Hotmail.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Live SkyDrive.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Microsoft alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Microsoft Store.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Microsoft.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\myspace alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\myspace.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Netflix.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Pandora alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Pandora.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Pinterest alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Pinterest.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Rdio alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Rdio.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Reddit alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Reddit.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\RSS Feed.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\StumbleUpon alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\StumbleUpon.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\The New York Times alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\The New York Times.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\The Weather Channel alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\The Weather Channel.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Tumblr alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Tumblr.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Twitter alt 1.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Twitter alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Twitter alt 3.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Twitter alt 4.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Twitter.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Vimeo.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Wikipedia alt 1.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Wikipedia alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Wikipedia.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Windows Marketplace.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Windows Store.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Wordpress alt.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Wordpress.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Yahoo! alt 1.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Yahoo! alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Yahoo!.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\YouTube alt 1.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\Youtube alt 2.ico" />
+    <Content Include="images\MetroICO\InternetShortcutsManufacturers\YouTube.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Access alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Access alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Access.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Entourage alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Entourage alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Entourage.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Excel alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Excel alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Excel.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Frontpage alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Frontpage alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\FrontPage.ico" />
+    <Content Include="images\MetroICO\OfficeApps\InfoPath alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\InfoPath alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\InfoPath.ico" />
+    <Content Include="images\MetroICO\OfficeApps\MS Office Upload Center.ico" />
+    <Content Include="images\MetroICO\OfficeApps\MS Office.ico" />
+    <Content Include="images\MetroICO\OfficeApps\OneNote alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\OneNote alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\OneNote.ico" />
+    <Content Include="images\MetroICO\OfficeApps\OpenOffice.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Outlook alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Outlook alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Outlook.ico" />
+    <Content Include="images\MetroICO\OfficeApps\PowerPoint alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\PowerPoint alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\PowerPoint.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Project alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Project alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Project.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Publisher alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Publisher alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Publisher.ico" />
+    <Content Include="images\MetroICO\OfficeApps\SharePoint alt.ico" />
+    <Content Include="images\MetroICO\OfficeApps\SharePoint.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Visio alt.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Visio.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Word alt 1.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Word alt 2.ico" />
+    <Content Include="images\MetroICO\OfficeApps\Word.ico" />
+    <Content Include="images\MetroICO\Other\Graduation alt.ico" />
+    <Content Include="images\MetroICO\Other\Graduation.ico" />
+    <Content Include="images\MetroICO\Other\Mail alt.ico" />
+    <Content Include="images\MetroICO\Other\Mail.ico" />
+    <Content Include="images\MetroICO\Other\Notifications.ico" />
+    <Content Include="images\MetroICO\Other\Origins.ico" />
+    <Content Include="images\MetroICO\Other\Pin.ico" />
+    <Content Include="images\MetroICO\Other\Power - Hibernate.ico" />
+    <Content Include="images\MetroICO\Other\Power - Lock.ico" />
+    <Content Include="images\MetroICO\Other\Power - Log Off.ico" />
+    <Content Include="images\MetroICO\Other\Power - Restart.ico" />
+    <Content Include="images\MetroICO\Other\Power - Shut Down.ico" />
+    <Content Include="images\MetroICO\Other\Power - Sleep.ico" />
+    <Content Include="images\MetroICO\Other\Power - Standby.ico" />
+    <Content Include="images\MetroICO\Other\Power - Switch User.ico" />
+    <Content Include="images\MetroICO\Other\Puzzle.ico" />
+    <Content Include="images\MetroICO\Other\Save.ico" />
+    <Content Include="images\MetroICO\Other\Search alt.ico" />
+    <Content Include="images\MetroICO\Other\Search.ico" />
+    <Content Include="images\MetroICO\Other\Share alt 1.ico" />
+    <Content Include="images\MetroICO\Other\Share alt 2.ico" />
+    <Content Include="images\MetroICO\Other\Share.ico" />
+    <Content Include="images\MetroICO\Other\Shortcuts.ico" />
+    <Content Include="images\MetroICO\Other\Signal.ico" />
+    <Content Include="images\MetroICO\Other\Tasks.ico" />
+    <Content Include="images\MetroICO\Other\Update.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Firefox alt.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Firefox.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Google Canary alt.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Google Canary.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Google Chrome alt.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Google Chrome.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Google Chromium alt.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Google Chromium.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Internet Explorer 10.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Internet Explorer alt.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Internet Explorer.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Opera alt.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Opera.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\RockMelt.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Safari alt.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\Safari.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\SRWare Iron alt.ico" />
+    <Content Include="images\MetroICO\WebBrowsers\SRWare Iron.ico" />
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMLSS">
+      <Guid>{C21E9CE5-B317-463B-A1B1-B5E36EED59D0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPDXMLib">
+      <Guid>{73F0DD5C-D071-46B6-A8BF-897C84EAAC49}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLauncher">
+      <Guid>{5CB42160-CD7C-4806-9367-1C4A65153F4A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Packages\WindowsInstaller4_5\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
